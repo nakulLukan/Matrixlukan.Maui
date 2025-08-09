@@ -6,7 +6,20 @@
 		<SingleProject>true</SingleProject>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-
+		
+		<!-- Basic NuGet Info -->
+		<PackageId>Matrixlukan.Maui.Controls.OverlayView</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>matrixlukan</Authors>
+		<Company>Matrixlukan</Company>
+		<Description>A reusable overlay view control for .NET MAUI applications.</Description>
+		<PackageTags>maui overlay control ui float toast snackbar</PackageTags>
+		<RepositoryUrl>https://github.com/nakulLukan/Matrixlukan.Maui</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/nakulLukan/Matrixlukan.Maui</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>../Readme.md</PackageReadmeFile>
+		<PackageOutputPath>./nupkg</PackageOutputPath>
+		
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 	</PropertyGroup>
@@ -14,5 +27,4 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 	</ItemGroup>
-
 </Project>
