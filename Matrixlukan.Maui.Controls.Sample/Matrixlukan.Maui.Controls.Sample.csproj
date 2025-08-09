@@ -56,10 +56,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Controls\Overlay\CustomSnackbar.xaml.cs">
+	    <DependentUpon>CustomSnackbar.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Controls\Overlay\FloatingButton.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Controls\Overlay\MyCustomizedOverlay.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Controls\Overlay\CustomSnackbar.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\OverlaySamplePage.xaml">

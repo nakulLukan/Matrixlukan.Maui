@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<base:OverlayBaseView
+    x:Class="Matrixlukan.Maui.Controls.Sample.Controls.Overlay.CustomSnackbar"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:Matrixlukan.Maui.Controls.OverlayView.Control;assembly=Matrixlukan.Maui.Controls.OverlayView">
+    <Border
+        Margin="0,0,0,100"
+        Padding="4"
+        BackgroundColor="PaleTurquoise"
+        StrokeShape="RoundRectangle 4">
+        <Grid
+            ColumnDefinitions="Auto, *, Auto"
+            ColumnSpacing="2"
+            RowDefinitions="auto">
+            <Image
+                x:Name="imgIcon"
+                HeightRequest="44"
+                WidthRequest="44" />
+            <Label
+                x:Name="lblMessage"
+                Grid.Column="1"
+                FontSize="16"
+                TextColor="Black"
+                VerticalTextAlignment="Center" />
+            <ImageButton
+                x:Name="imgbtnClose"
+                Grid.Column="2"
+                Clicked="Close_Clicked"
+                HeightRequest="1"
+                Source="close.png"
+                WidthRequest="1" />
+        </Grid>
+    </Border>
+</base:OverlayBaseView>

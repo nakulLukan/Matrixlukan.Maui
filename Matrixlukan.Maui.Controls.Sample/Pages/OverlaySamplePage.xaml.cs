@@ -12,14 +12,6 @@ public partial class OverlaySamplePage : ContentPage
         InitializeComponent();
     }
 
-    protected override void OnAppearing()
-    {
-        base.OnAppearing();
-        Overlay overlay = new Overlay();
-        OverlayView.Control.OverlayBaseView floatingButton = new FloatingButton(overlay);
-        overlay.Open(floatingButton, Anchor.BottomRight, new LayoutBounds(1, 1), LayoutFlags.PositionProportional);
-    }
-
     private void SharedCenterAnchorPositionProportional_Clicked(object sender, EventArgs e)
     {
         Overlay.Shared.Open(new MyCustomizedOverlay(), Anchor.Center, new LayoutBounds(0.5, 0.5), LayoutFlags.PositionProportional);
@@ -43,5 +35,10 @@ public partial class OverlaySamplePage : ContentPage
     private void Close_Clicked(object sender, EventArgs e)
     {
         Overlay.Shared.Close();
+    }
+
+    private void ToastClicked(object sender, EventArgs e)
+    {
+        Overlay.Shared.Open(new CustomSnackbar("This is my custom snackbar", "dotnet_bot.png", Overlay.Shared), Anchor.Bottom, new LayoutBounds(0.5, 1), LayoutFlags.PositionProportional);
     }
 }

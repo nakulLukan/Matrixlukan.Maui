@@ -8,6 +8,7 @@
         <VerticalStackLayout HorizontalOptions="Center" Spacing="4">
             <Button Clicked="Close_Clicked" Text="Close" />
             <Label Text="Shared" />
+            <Button Clicked="ToastClicked" Text="Custom Toasted" />
             <Button Clicked="SharedCenterAnchorPositionProportional_Clicked" Text="Center Anchor | PositionProportional 0.5" />
             <Button Clicked="SharedCenterAnchorPositionProportionalBottom_Clicked" Text="Center Anchor | PositionProportional 1" />
             <Button Clicked="SharedBottomLeftAnchorPositionProportionalBottom_Clicked" Text="Bottom Left Anchor| Full Width" />

@@ -1,4 +1,4 @@
-# Matrixlukan.Maui.Controls.OverlayView
+## Matrixlukan.Maui.Controls.OverlayView
 
 A .NET MAUI control library providing an easy-to-use, customizable overlay view for Android and iOS applications. This package is designed to help developers display floating UI elements, dialogs, or custom overlays on top of existing content in MAUI projects.
 
@@ -19,12 +19,29 @@ Or, if published as a NuGet package:
 
 ### Usage Example
 
-1. **Add the namespace to your XAML:**
-
-2. **Use the OverlayView in your page:**
-
-3. **Show or hide overlays programmatically:**
-
+1. **Create your custom floating view by inheriting `OverlayBaseView`:**
+    ``` csharp
+    public partial class CustomSnackbar : OverlayBaseView
+    {
+        public CustomSnackbar()
+        {
+            InitializeComponent();
+        }
+    }
+    ```
+2. **Use `Overlay.Shared` to instantiate your floating view and display it:**
+``` csharp
+Overlay.Shared.Open(
+    new CustomSnackbar(),
+    Anchor.Bottom,
+    new LayoutBounds(0.5, 1),
+    LayoutFlags.PositionProportional
+);
+```
+3. **Close the floating view by invoking `Close()`:**
+``` csharp
+Overlay.Shared.Close();
+```
 ### Sample
 
 See the `Matrixlukan.Maui.Controls.Sample` project for usage examples, including custom overlays and floating buttons.
