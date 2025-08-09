@@ -29,8 +29,7 @@ Or, if published as a NuGet package:
 
 See the `Matrixlukan.Maui.Controls.Sample` project for usage examples, including custom overlays and floating buttons.
 
-## Demo
-<video src="Docs\OverlayView\Sample.mp4" controls height="500"></video>
+![OverlayView Demo](Docs/OverlayView/Sample.gif)
 
 ## Supported Platforms
 
