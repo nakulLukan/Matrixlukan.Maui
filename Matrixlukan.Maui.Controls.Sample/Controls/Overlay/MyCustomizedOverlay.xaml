@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<base:OverlayBaseView
+    x:Class="Matrixlukan.Maui.Controls.Sample.Controls.Overlay.MyCustomizedOverlay"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:Matrixlukan.Maui.Controls.OverlayView.Control;assembly=Matrixlukan.Maui.Controls.OverlayView"
+    HorizontalOptions="Fill">
+    <Border Padding="4" BackgroundColor="PaleGoldenrod">
+        <Label
+            FontAttributes="Bold"
+            FontSize="16"
+            HorizontalOptions="Center"
+            Text="Welcome to .NET MAUI!"
+            TextColor="Black"
+            VerticalOptions="Center" />
+    </Border>
+</base:OverlayBaseView>

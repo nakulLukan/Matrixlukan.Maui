@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Matrixlukan.Maui.Controls.Sample.OverlaySamplePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Overlay Sample">
+    <VerticalStackLayout Spacing="8">
+        <VerticalStackLayout HorizontalOptions="Center" Spacing="4">
+            <Button Clicked="Close_Clicked" Text="Close" />
+            <Label Text="Shared" />
+            <Button Clicked="SharedCenterAnchorPositionProportional_Clicked" Text="Center Anchor | PositionProportional 0.5" />
+            <Button Clicked="SharedCenterAnchorPositionProportionalBottom_Clicked" Text="Center Anchor | PositionProportional 1" />
+            <Button Clicked="SharedBottomLeftAnchorPositionProportionalBottom_Clicked" Text="Bottom Left Anchor| Full Width" />
+            <Button Clicked="SharedTopLeftAnchorFixedWidthFullHeight_Clicked" Text="Top Left Anchor | Fixed Width | Full Height" />
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
